@@ -12,7 +12,7 @@ description: Chrome extension so sánh giá, review, khuyến mãi và hậu mã
 <p><a class="cta" href="https://chromewebstore.google.com/" rel="noopener">Sắp có trên Chrome Web Store →</a><a class="ghost" href="{{ '/PRIVACY' | relative_url }}">Chính sách quyền riêng tư</a></p>
 <div class="stores"><span>Tiki</span><span>Thế Giới Di Động</span><span>Điện Máy Xanh</span><span>CellphoneS</span><span>FPT Shop</span><span>Siêu Thị Chợ Lớn</span><span>Shopee</span><span>Lazada</span><span>TikTok Shop</span><span>Amazon</span><span>Walmart</span><span>Best Buy</span><span>eBay</span></div>
 </div>
-<img class="shot" src="{{ '/assets/screenshot-compare.png' | relative_url }}" alt="Side panel so sánh giá với thẻ Lựa chọn tốt nhất và nhận xét AI">
+<img class="shot panel" src="{{ '/assets/screenshot-compare.png' | relative_url }}" alt="Side panel so sánh giá với thẻ Lựa chọn tốt nhất và nhận xét AI">
 </div></div>
 
 <section><div class="wrap">
