@@ -6,7 +6,7 @@ description: Chrome extension so sánh giá, review, khuyến mãi và hậu mã
 
 <div class="hero"><div class="wrap">
 <div>
-<span class="kicker">✨ Trợ lý mua sắm với AI on-device</span>
+<span class="kicker"><span class="ki"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8"/></svg></span> Trợ lý mua sắm với AI on-device</span>
 <h1>Mua ở đâu <span class="grad">rẻ và an tâm nhất?</span></h1>
 <p class="lead">So sánh một sản phẩm trên 13 sàn thương mại điện tử — giá, review, khuyến mãi, chính sách hậu mãi — trong một bảng. AI chạy ngay trong Chrome, không cần API key, dữ liệu không rời khỏi máy bạn.</p>
 <p><a class="cta" href="https://chromewebstore.google.com/" rel="noopener">Sắp có trên Chrome Web Store →</a><a class="ghost" href="{{ '/PRIVACY' | relative_url }}">Chính sách quyền riêng tư</a></p>
@@ -19,12 +19,12 @@ description: Chrome extension so sánh giá, review, khuyến mãi và hậu mã
 <h2>Mọi thứ bạn cần trước khi bấm mua</h2>
 <p class="sub">Nhập tên sản phẩm, hoặc mở trang sản phẩm bất kỳ và bấm nút nổi "Tìm giá tốt hơn".</p>
 <div class="grid">
-<div class="card"><div class="ic">🏆</div><h3>Chọn giúp nơi mua</h3><p>Lựa chọn tốt nhất, giá tốt nhất, review tốt nhất, bán chạy nhất, hậu mãi tốt nhất — kèm nhận xét AI: ưu, nhược điểm và mẹo mua.</p></div>
-<div class="card"><div class="ic">🎁</div><h3>Khuyến mãi thật của sàn</h3><p>Trả góp 0%, giảm qua ví / ngân hàng, quà tặng, freeship, giao nhanh — hiện ngay trên từng kết quả.</p></div>
-<div class="card"><div class="ic">⚠️</div><h3>Cảnh báo hàng rẻ bất thường</h3><p>Listing thấp hơn thị trường quá nhiều (hàng cũ, xách tay, giả) được đánh dấu chứ không giấu đi.</p></div>
-<div class="card"><div class="ic">💸</div><h3>Rẻ hơn ở sàn khác?</h3><p>Đang xem sản phẩm trên một sàn, thẻ nhỏ cho biết cùng model ở sàn khác rẻ hơn bao nhiêu — không mở tab nền.</p></div>
-<div class="card"><div class="ic">🎟️</div><h3>Ví mã giảm giá</h3><p>Mã bạn thấy trên trang sàn được ghi nhớ và thử tự động ở bước thanh toán; chỉ nhập mã và bấm "Áp dụng", không bao giờ tự đặt hàng.</p></div>
-<div class="card"><div class="ic">🔔</div><h3>Báo khi giảm giá</h3><p>Lưu sản phẩm, extension kiểm tra giá định kỳ và thông báo khi giảm; xem biểu đồ lịch sử giá.</p></div>
+<div class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4zM7 6H4a3 3 0 0 0 3 4M17 6h3a3 3 0 0 1-3 4"/></svg></span><h3>Chọn giúp nơi mua</h3><p>Lựa chọn tốt nhất, giá tốt nhất, review tốt nhất, bán chạy nhất, hậu mãi tốt nhất — kèm nhận xét AI: ưu, nhược điểm và mẹo mua.</p></div>
+<div class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12v9H4v-9M2 7h20v5H2zM12 7v14M12 7s-1.5-4-4-4a2 2 0 0 0 0 4h4zM12 7s1.5-4 4-4a2 2 0 0 1 0 4h-4z"/></svg></span><h3>Khuyến mãi thật của sàn</h3><p>Trả góp 0%, giảm qua ví / ngân hàng, quà tặng, freeship, giao nhanh — hiện ngay trên từng kết quả.</p></div>
+<div class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 2 20h20L12 3zM12 9v5M12 17h.01"/></svg></span><h3>Cảnh báo hàng rẻ bất thường</h3><p>Listing thấp hơn thị trường quá nhiều (hàng cũ, xách tay, giả) được đánh dấu chứ không giấu đi.</p></div>
+<div class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12 12 20l-9-9V3h8l9 9zM7 7h.01"/></svg></span><h3>Rẻ hơn ở sàn khác?</h3><p>Đang xem sản phẩm trên một sàn, thẻ nhỏ cho biết cùng model ở sàn khác rẻ hơn bao nhiêu — không mở tab nền.</p></div>
+<div class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8a2 2 0 0 0 2-2V5h14v1a2 2 0 0 0 2 2v2a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2v2H5v-2a2 2 0 0 0-2-2v-2a2 2 0 0 0 2-2V8zM9 5v14"/></svg></span><h3>Ví mã giảm giá</h3><p>Mã bạn thấy trên trang sàn được ghi nhớ và thử tự động ở bước thanh toán; chỉ nhập mã và bấm "Áp dụng", không bao giờ tự đặt hàng.</p></div>
+<div class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 16V11a6 6 0 0 1 12 0v5l2 2H4l2-2zM10 21h4"/></svg></span><h3>Báo khi giảm giá</h3><p>Lưu sản phẩm, extension kiểm tra giá định kỳ và thông báo khi giảm; xem biểu đồ lịch sử giá.</p></div>
 </div>
 </div></section>
 
@@ -41,5 +41,5 @@ description: Chrome extension so sánh giá, review, khuyến mãi và hậu mã
 
 <section><div class="wrap">
 <h2>Hỗ trợ</h2>
-<p class="sub">Gặp lỗi, sàn không ra dữ liệu, hay muốn thêm sàn? Mở issue tại <a href="https://github.com/manhdungitvn/ai-price-compare/issues">GitHub Issues</a> — trong extension, chip sàn bị lỗi có nút <b>📋 Copy diagnostics</b>, dán kèm vào issue giúp xử lý nhanh hơn.</p>
+<p class="sub">Gặp lỗi, sàn không ra dữ liệu, hay muốn thêm sàn? Mở issue tại <a href="https://github.com/manhdungitvn/ai-price-compare/issues">GitHub Issues</a> — trong extension, chip sàn bị lỗi có nút <b>Copy diagnostics</b>, dán kèm vào issue giúp xử lý nhanh hơn.</p>
 </div></section>

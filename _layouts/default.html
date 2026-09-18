@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title | default: site.title }}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
-  <link rel="icon" href="{{ '/assets/icon.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="128x128" href="{{ '/assets/icon.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/icon-32.png' | relative_url }}">
+  <link rel="shortcut icon" href="{{ '/favicon.ico' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/assets/icon.png' | relative_url }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
@@ -34,7 +37,8 @@
     .sub { color: var(--soft); margin: 0 0 24px; }
     .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
     .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 20px; }
-    .card .ic { font-size: 26px; } .card h3 { margin: 8px 0 6px; font-size: 16px; } .card p { margin: 0; color: var(--muted); font-size: 14px; }
+    .ic { display: inline-flex; width: 44px; height: 44px; border-radius: 12px; background: linear-gradient(135deg, #eef2ff, #fce7f3); color: #4f46e5; align-items: center; justify-content: center; } .ic svg { width: 24px; height: 24px; }
+    .ki { display: inline-flex; width: 18px; height: 18px; color: #ec4899; } .ki svg { width: 18px; height: 18px; } .card h3 { margin: 8px 0 6px; font-size: 16px; } .card p { margin: 0; color: var(--muted); font-size: 14px; }
     .stores { display: flex; flex-wrap: wrap; gap: 8px; } .stores span { padding: 6px 12px; border-radius: 999px; background: #fff; border: 1px solid var(--line); font-size: 13px; font-weight: 600; color: var(--muted); }
     .two { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: center; } .two + .two { margin-top: 40px; }
     .privacy { background: #fff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
