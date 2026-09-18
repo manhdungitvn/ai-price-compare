@@ -1,5 +1,9 @@
 ---
+layout: default
+layout_mode: doc
+lang: en
 title: Privacy Policy — AI Reviewer & Price Compare
+description: Everything stays on your device — no server, no analytics, on-device AI. Privacy policy of the AI Reviewer & Price Compare Chrome extension (EN + VI).
 ---
 
 # Privacy Policy — AI Reviewer & Price Compare
