@@ -9,7 +9,7 @@ description: Chrome extension so sánh giá, review, khuyến mãi và hậu mã
 <span class="kicker"><span class="ki"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8"/></svg></span> Trợ lý mua sắm với AI on-device</span>
 <h1>Mua ở đâu <span class="grad">rẻ và an tâm nhất?</span></h1>
 <p class="lead">So sánh một sản phẩm trên 13 sàn thương mại điện tử — giá, review, khuyến mãi, chính sách hậu mãi — trong một bảng. AI chạy ngay trong Chrome, không cần API key, dữ liệu không rời khỏi máy bạn.</p>
-<p><a class="cta" href="https://chromewebstore.google.com/" rel="noopener">Sắp có trên Chrome Web Store →</a><a class="ghost" href="{{ '/PRIVACY' | relative_url }}">Chính sách quyền riêng tư</a></p>
+<p><a class="cta" href="https://chromewebstore.google.com/detail/ai-reviewer-price-compare/fjgcnfijpnpdmfklgonhkehkaoofbggj" rel="noopener">Cài đặt từ Chrome Web Store →</a><a class="ghost" href="{{ '/PRIVACY' | relative_url }}">Chính sách quyền riêng tư</a></p>
 <div class="stores"><span>Tiki</span><span>Thế Giới Di Động</span><span>Điện Máy Xanh</span><span>CellphoneS</span><span>FPT Shop</span><span>Siêu Thị Chợ Lớn</span><span>Shopee</span><span>Lazada</span><span>TikTok Shop</span><span>Amazon</span><span>Walmart</span><span>Best Buy</span><span>eBay</span></div>
 </div>
 <img class="shot panel" src="{{ '/assets/screenshot-compare.png' | relative_url }}" alt="Side panel so sánh giá với thẻ Lựa chọn tốt nhất và nhận xét AI">
