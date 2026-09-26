@@ -1,5 +1,7 @@
 title: AI Reviewer & Price Compare
-description: Chrome extension — compare prices, reviews and promotions across stores with on-device AI. No API key, data stays on your device.
-lang: vi
+description: Chrome extension — compare prices, reviews and deals across stores with on-device AI. No API key, your data stays on your device.
+lang: en
+url: https://manhdungitvn.github.io
+baseurl: /ai-price-compare
 markdown: kramdown
 exclude: [README.md]

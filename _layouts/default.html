@@ -1,10 +1,32 @@
 <!doctype html>
-<html lang="{{ page.lang | default: 'vi' }}">
+{%- assign lang = page.lang | default: site.lang -%}
+{%- assign vi = false -%}{%- if lang == 'vi' -%}{%- assign vi = true -%}{%- endif -%}
+<html lang="{{ lang }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title | default: site.title }}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  {%- if page.translations %}
+  {%- for t in page.translations %}
+  <link rel="alternate" hreflang="{{ t[0] }}" href="{{ t[1] | absolute_url }}">
+  {%- endfor %}
+  <link rel="alternate" hreflang="x-default" href="{{ page.translations.en | absolute_url }}">
+  {%- endif %}
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:title" content="{{ page.title | default: site.title }}">
+  <meta property="og:description" content="{{ page.description | default: site.description }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ '/assets/og-image.png' | absolute_url }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="{% if vi %}vi_VN{% else %}en_US{% endif %}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title | default: site.title }}">
+  <meta name="twitter:description" content="{{ page.description | default: site.description }}">
+  <meta name="twitter:image" content="{{ '/assets/og-image.png' | absolute_url }}">
   <link rel="icon" type="image/png" sizes="128x128" href="{{ '/assets/icon.png' | relative_url }}">
   <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/icon-32.png' | relative_url }}">
   <link rel="shortcut icon" href="{{ '/favicon.ico' | relative_url }}">
@@ -19,7 +41,12 @@
     body { margin: 0; font-family: "Google Sans", "Segoe UI", system-ui, -apple-system, sans-serif; color: var(--ink); background: var(--bg); line-height: 1.55; -webkit-font-smoothing: antialiased; }
     a { color: #4f46e5; text-decoration: none; } a:hover { text-decoration: underline; }
     .nav { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; gap: 12px; padding: 12px 24px; background: rgba(255,255,255,.85); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
-    .nav img { width: 28px; height: 28px; border-radius: 8px; } .nav b { font-weight: 700; } .nav .links { margin-left: auto; display: flex; gap: 18px; font-size: 14px; font-weight: 500; }
+    .nav img { width: 28px; height: 28px; border-radius: 8px; } .nav b { font-weight: 700; } .nav .links { margin-left: auto; display: flex; align-items: center; gap: 18px; font-size: 14px; font-weight: 500; }
+    .lang { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; font-size: 12px; font-weight: 700; }
+    .lang a { padding: 4px 10px; color: var(--soft); } .lang a[aria-current="true"] { background: var(--ink); color: #fff; } .lang a:hover { text-decoration: none; }
+    .req { margin: 12px 0 0; font-size: 13px; color: var(--soft); }
+    .caption { margin: 10px 0 0; font-size: 12px; color: var(--soft); text-align: center; }
+    .checks { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; } .checks li { display: flex; gap: 10px; align-items: flex-start; color: var(--muted); } .checks li::before { content: "✓"; flex: none; width: 22px; height: 22px; border-radius: 50%; background: #ecfdf5; color: #059669; font-weight: 800; font-size: 13px; display: inline-flex; align-items: center; justify-content: center; }
     .wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
     .hero { padding: 72px 0 40px; background: radial-gradient(900px 500px at 15% 0%, #eef2ff 0%, #fdf2f8 55%, #fff7ed 100%); }
     .hero .wrap { display: grid; grid-template-columns: 1.1fr 1fr; gap: 40px; align-items: center; }
@@ -49,12 +76,15 @@
     .doc table { width: 100%; border-collapse: collapse; font-size: 14px; display: block; overflow-x: auto; } .doc th, .doc td { text-align: left; vertical-align: top; padding: 10px 12px; border: 1px solid var(--line); } .doc th { background: #f1f5f9; }
     .doc code { background: #f1f5f9; padding: 1px 6px; border-radius: 6px; font-size: 90%; } .doc hr { border: 0; border-top: 1px solid var(--line); margin: 48px 0; }
     @media (max-width: 800px) { .hero .wrap, .two, .grid { grid-template-columns: 1fr; } .hero { padding-top: 40px; } .ghost { margin: 8px 0 0; } }
+    @media (max-width: 560px) { .nav { padding: 10px 16px; gap: 10px; } .nav b { display: none; } .nav .links { gap: 12px; } .wrap { padding: 0 16px; } }
   </style>
 </head>
 <body>
   <nav class="nav"><img src="{{ '/assets/icon.png' | relative_url }}" alt=""><b>AI Reviewer &amp; Price Compare</b>
-    <span class="links"><a href="{{ '/' | relative_url }}">Trang chủ</a><a href="{{ '/PRIVACY' | relative_url }}">Privacy</a><a href="https://github.com/manhdungitvn/ai-price-compare/issues">Hỗ trợ</a></span></nav>
+    <span class="links"><a href="{% if vi %}{{ '/vi/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">{% if vi %}Trang chủ{% else %}Home{% endif %}</a><a href="{{ '/PRIVACY' | relative_url }}">Privacy</a><a href="https://github.com/manhdungitvn/ai-price-compare/issues">{% if vi %}Hỗ trợ{% else %}Support{% endif %}</a>
+    <span class="lang" role="group" aria-label="Language"><a href="{{ '/' | relative_url }}" hreflang="en" lang="en"{% unless vi %} aria-current="true"{% endunless %}>EN</a><a href="{{ '/vi/' | relative_url }}" hreflang="vi" lang="vi"{% if vi %} aria-current="true"{% endif %}>VI</a></span></span></nav>
   {% if page.layout_mode == 'doc' %}<main class="doc">{{ content }}</main>{% else %}{{ content }}{% endif %}
-  <footer><div class="wrap">© 2026 AI Reviewer &amp; Price Compare · <a href="{{ '/PRIVACY' | relative_url }}">Privacy Policy</a> · <a href="https://github.com/manhdungitvn/ai-price-compare/issues">Support</a> · Không liên kết với sàn nào; giá có thể thay đổi — kiểm tra lại trên trang bán trước khi mua.</div></footer>
+  <footer><div class="wrap">© 2026 AI Reviewer &amp; Price Compare · <a href="{{ '/PRIVACY' | relative_url }}">Privacy Policy</a> · <a href="https://github.com/manhdungitvn/ai-price-compare/issues">{% if vi %}Hỗ trợ{% else %}Support{% endif %}</a> ·
+    {% if vi %}Không liên kết với sàn nào; tên sàn là thương hiệu của chủ sở hữu. Giá có thể thay đổi — kiểm tra lại trên trang bán trước khi mua.{% else %}Not affiliated with Amazon, Walmart, Best Buy, eBay or any other store; store names are trademarks of their owners. Prices can change — check the store page before buying.{% endif %}</div></footer>
 </body>
 </html>
