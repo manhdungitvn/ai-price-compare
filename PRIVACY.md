@@ -38,6 +38,7 @@ In Settings you can enter your **own** affiliate link templates. When enabled, l
 ## Permissions explained
 - **Read data on all https sites (content script)** — detects the product on the page you are viewing and shows the floating "Find a better price" button and the "cheaper elsewhere" / coupon cards. Read-only; it only talks to the extension's own background worker.
 - **Access to the supported stores (host permissions)** — fetch their public search pages and, for stores that render results with JavaScript, open a background tab that is closed as soon as results are read.
+- **Optional access to stores added later** — some stores are off by default. When you turn one on in Settings, Chrome asks you to allow that store's site; nothing is asked on update, and declining simply leaves the store off. Used the same way as above.
 - **storage** — settings, cache, saved items, coupon wallet (all local).
 - **sidePanel** — the main user interface.
 - **scripting** — run the page-reading script inside store search tabs and in tabs that were already open when the extension was installed.
@@ -86,6 +87,7 @@ Bạn có thể tự nhập mẫu link affiliate **của bạn** trong Cài đ�
 ## Quyền truy cập
 - **Đọc dữ liệu trên mọi trang https** — nhận diện sản phẩm đang xem, hiện nút "Tìm giá tốt hơn" và thẻ "rẻ hơn ở sàn khác" / mã giảm giá. Chỉ đọc; chỉ nói chuyện với worker của chính extension.
 - **Truy cập các sàn hỗ trợ** — tải trang tìm kiếm công khai; với sàn render bằng JavaScript, mở tab nền và đóng ngay khi đọc xong.
+- **Truy cập tuỳ chọn cho sàn thêm sau** — một số sàn mặc định tắt. Khi bạn bật sàn đó trong Cài đặt, Chrome hỏi quyền truy cập đúng trang của sàn; cập nhật không hỏi gì, từ chối thì sàn vẫn tắt. Dùng giống như trên.
 - **storage** — cài đặt, cache, đã lưu, ví mã (đều local). **sidePanel** — giao diện chính. **scripting** — chạy script đọc trang trong tab tìm kiếm và tab đã mở sẵn. **alarms, offscreen, notifications** — kiểm tra giá định kỳ, báo khi giảm.
 
 ## Quyền kiểm soát của bạn
