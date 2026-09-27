@@ -21,6 +21,16 @@ description: Chrome extension so sánh giá, review, khuyến mãi và hậu mã
 <img class="shot panel" src="{{ '/assets/screenshot-compare.png' | relative_url }}" alt="Side panel so sánh giá với thẻ Lựa chọn tốt nhất và nhận xét AI">
 </div></div>
 
+<section class="demo"><div class="wrap">
+<h2>Xem trên một trang Amazon thật</h2>
+<p class="sub">Thẻ trên trang sản phẩm so cùng model ở Walmart, Best Buy và eBay; bấm thêm một lần để mở bảng so sánh đầy đủ và nhận xét của AI chạy ngay trên máy.</p>
+<video autoplay muted loop playsinline preload="metadata" poster="{{ '/assets/demo-poster.jpg' | relative_url }}" aria-label="Video quay màn hình: trên trang sản phẩm Amazon, tiện ích tìm thấy cùng mẫu tai nghe rẻ hơn ở eBay, sau đó side panel so sánh 4 sàn Mỹ và AI viết nhận xét">
+<source src="{{ '/assets/demo.webm' | relative_url }}" type="video/webm">
+<source src="{{ '/assets/demo.mp4' | relative_url }}" type="video/mp4">
+</video>
+<p class="caption">Quay màn hình thật trên Chrome ngày 27/09/2026 (Amazon Mỹ, giao tới ZIP 10001). Những đoạn chờ được tua nhanh và có ghi chú; giá là giá tại ngày quay.</p>
+</div></section>
+
 <section><div class="wrap">
 <h2>Mọi thứ bạn cần trước khi bấm mua</h2>
 <p class="sub">Nhập tên sản phẩm, hoặc mở trang sản phẩm bất kỳ và bấm nút nổi "Tìm giá tốt hơn".</p>

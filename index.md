@@ -23,6 +23,16 @@ translations:
 </figure>
 </div></div>
 
+<section class="demo"><div class="wrap">
+<h2>See it on a real Amazon page</h2>
+<p class="sub">The card on the product page compares the same model at Walmart, Best Buy and eBay; one more click opens the full comparison and the on-device AI verdict.</p>
+<video autoplay muted loop playsinline preload="metadata" poster="{{ '/assets/demo-poster.jpg' | relative_url }}" aria-label="Screen recording: on an Amazon product page the extension finds the same headphones cheaper on eBay, then the side panel compares four US stores and writes an AI verdict">
+<source src="{{ '/assets/demo.webm' | relative_url }}" type="video/webm">
+<source src="{{ '/assets/demo.mp4' | relative_url }}" type="video/mp4">
+</video>
+<p class="caption">Real screen recording in Chrome, 27 Sep 2026 (Amazon US, delivery to ZIP 10001). Waiting is sped up where labelled; prices are as of that day.</p>
+</div></section>
+
 <section><div class="wrap">
 <h2>Everything you need before clicking “Buy”</h2>
 <p class="sub">Type a product name, or open any product page and click the floating “Find a better price” button.</p>
